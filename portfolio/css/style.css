@@ -1,0 +1,502 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:200,400,700";
+/* Algemeen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font: 100%/1.3 Raleway, Arial, Sans-serif;
+    background: white;
+    box-sizing: border-box;
+    position: relative;
+    /* margin: 0;
+    padding: 0; */
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+}
+
+.brand{
+    width: 25%;
+    padding-top: 20px;
+}
+
+.links-container{
+    display: flex;
+    list-style: none;
+}
+
+.link{
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+    font-weight: 600;
+}
+
+.link:hover:not(.active){
+    opacity: 0.7;
+}
+
+.link.active::before, .seperator::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+.link.active::after, .seperator::after{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: black;
+}
+
+/* Languages */
+
+.nav-lang{
+    display: block;
+}
+.navLangLi{
+    text-decoration: none;
+    list-style-type: none;
+}
+/* Hedaer video */
+#videoBG{
+    position: relative;
+    z-index: -1;
+    margin: 0 auto;
+    left:0;
+    top:0;
+    height: 100vh;
+    padding: 0;
+
+}
+
+/* Home section */
+
+.headerText{
+    position: absolute;
+    text-align: center;
+    bottom: 15em;
+    top: 15em;
+    left: 0em;
+    right: 0em;
+    padding: 0;
+}
+
+.headerTitle{
+    font-weight: 400;
+    font-size: 3.5em;
+    padding-bottom: 1.5em;
+}
+.headerSpan{
+    font-weight: 600;
+}
+
+.btn{
+    padding: 10px 20px; 
+    text-decoration: underline;
+    border-radius: 50px;
+    text-transform: capitalize;
+    border: none;
+    color: black;
+    font-weight: 400;
+    font-size: 2em;
+}
+.btn:hover{
+   font-weight: 600;
+}
+ 
+
+
+/* About Section */
+.about{
+    width: 100%;
+    height: auto;
+    padding: 50px 10vw;
+    position: relative;
+    text-align: center;
+}
+.heading{
+    font-size: 2em;
+    text-align: center;
+}
+.sub-heading{
+    text-align: center;
+    font-size: 1em;
+    margin: 10px;
+}
+
+.seperator{
+    width: 25%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.downloadCv {
+    margin: 30px 0px;
+    text-align: center;
+}
+.downloadCv a  {
+    text-decoration: none;
+    margin-top: 25px;
+    color: black;
+    padding: 1em;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #FF5DA2;
+}
+.downloadCv a:hover{
+    font-weight: 600;
+    background-color: #FF5DA2;
+    color: white;
+}
+
+/* Skills */
+.skill-container{
+    position: relative;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.skill{
+
+    font-size: 15px;
+    color: black;
+    line-height: 150px;
+    margin: 20px;
+}
+
+.skill-card{
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #FF5DA2;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.skill-card:hover{
+    /* background: #FF5DA2; */
+    background: var(--bg);
+    }
+    
+    .skill-card:hover .skill{
+        color: white;
+        font-weight: 600;
+    } 
+
+/* Projects section */
+
+.project{
+    position: relative;
+    padding: 50px 10vw;
+}
+
+.filters{
+    width: fit-content;
+    display: block;
+    margin: 100px auto;
+}
+
+.filter-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #FF5DA2;
+    background-color: white;
+    text-transform: capitalize;
+    margin: 0 5px 10px;
+    cursor: pointer;
+}
+
+.filter-btn.active{
+    background-color: #FF5DA2;
+    color: white;
+}
+
+.project-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:20px;
+}
+
+.project-card{
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.project-card img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card .content{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    /* background: rgba(0,0,0,0.7); */
+    background-image: linear-gradient(90deg, #9C19E0, #FF5DA2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    text-transform: capitalize;
+    opacity: 0;
+}
+ .project-card img{
+    width: 40%;
+ }
+
+.project-name{
+    font-weight: 500;
+    font-size: 1.3em;
+    text-align: center;
+    color: white;
+    
+}
+
+.project-info{
+    font-weight: 300;
+    font-size: .8em;
+    text-align: center;
+    color: white;
+    padding: 1em;
+}
+
+.tags{
+    position:absolute;
+    bottom: 20px;
+    opacity: 0.6;
+    color: white;
+    width: 90%;
+}
+
+.project-card:hover .content{
+    opacity: 1;
+}
+
+.project-card.hide{
+    display: none;
+}
+
+/* Tablet view */
+
+@media (max-width: 996px) {
+    html{
+        font-size: 14px;
+    }
+
+    /* Toggle btn */
+    .toggle-btn{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 10vw;
+        cursor: pointer;
+    }
+
+    .toggle-btn span{
+        position:absolute;
+        width: 100%;
+        height: 2px;
+        background: black;
+        top: 30%;
+        transition: .5s;
+    } 
+
+    .toggle-btn span:nth-child(2){
+        top: 70%;
+    }
+
+    /* X */
+    .toggle-btn.active span:nth-child(1){
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .toggle-btn.active span:nth-child(2){
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+    /* Links */
+    .links-container{
+        position:absolute;
+        top: 60px;
+        background-color: white;
+        width: 100%;
+        left: 0;
+        padding: 0 10vw;
+        flex-direction: column;
+        transition: .5s;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .links-container.show{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .link{
+        margin-left: auto;
+        text-align: center;
+        display: block;
+        height: 50px;
+    }
+
+/* Home section */  
+.headerTitle{
+    font-size: 1.5em;
+}
+#videoBG { 
+    width:auto;
+    height: 100%;
+    display: none;
+
+}
+.videoimg{
+
+    background: url('../img/header-mob.PNG');
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    width:100%;
+    height: 500px;
+
+}
+
+/* Skills */
+
+.skill-container , .project-container{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.skill-card{
+    grid-column: 1 span !important;
+}
+
+.filters{
+    margin: 70px auto;
+}
+}
+
+/* Mobile view */
+@media( max-width: 500px ){
+
+    html{
+        font-size: 12px;
+    }
+
+    .sub-heading{
+        font-size: 1em;
+    }
+    .skill-container , .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    .videoimg{
+
+        background: url('../img/header-mob.PNG');
+        background-size: cover;
+        background-repeat: no-repeat, repeat;
+        width:100%;
+        height: 330px;
+
+    }
+
+    .project-name{
+        font-size: 1em;
+    }
+
+    .name{
+        flex-direction: column;
+    }
+    .project-info{
+        display: none;
+    }
+    .filters{
+        margin: 50px auto;
+    }
+    .filter-btn{
+      display: block;
+      margin: 5px auto;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive video */
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 500px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('../src/images/header-mob.PNG');
+        background-size: cover;
+        background-repeat: no-repeat, repeat;
+    }
+}

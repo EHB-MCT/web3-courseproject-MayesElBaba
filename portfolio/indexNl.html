@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mayes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+   
+        <header class=" clearfix">
+         <!-- Navigatie -->
+         <nav class="navbar">
+            <a href="#" title="Mayes El Baba"><img src="img/logo.png" alt="logo mayes" title="Logo van Mayes El Baba"  class="brand"></a>
+            <div class="toggle-btn ">
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="links-container"> 
+                <li class="links-item"><a href="#" class="link active"> Home</a></li>
+                <li class="links-item"><a href="#about-section" class="link"> Over mij</a></li>
+                <li class="links-item"><a href="#work-section" class="link"> Werk</a></li>
+                <li class="links-item"><a href="#contact-section" class="link"> Contact</a></li>
+                <li class="links-item"><a href="#" class="link active"> EN</a></li>
+                <li class="links-item"><a href="#contact-section" class="link"> Nl</a></li>
+            </ul>
+          </nav>
+          <div>
+          
+          </div>
+
+          <!-- Home section -->
+          <video  autoplay muted loop id="videoBG">
+            <source src="img/header.mp4" type="video/mp4" />
+          </video>
+          <div  class="videoimg"></div>
+        
+          <section class="headerText">
+            <h1 class="headerTitle">Hey , Ik ben <span class="headerSpan">Mayes</span> <br>
+                Scroll naar beneden om kennis te maken <br>
+                 en meer te weten over me!  
+            </h1>
+            <a href="#about-section" class="btn">Scroll </a>
+        </section>  
+    
+        </header>
+ 
+    <main class="clearfix">
+       <!-- About section -->
+       <section class="about" id="about-section"> 
+        <h2 class="heading"> Over mij</h2>
+        <div class="seperator"></div>
+        <br>
+        <p class="sub-heading">
+           I'm Mayes El Baba Student at Erasmus University , <br>
+           I study multimedia and creative technologies,  I'm a Websites developer, App developer and designer
+           I spend my time experimenting with different design techniques and colour combinations.
+           I can work with all the adobe programs, the most programs that I use for design are illustrator, photoshop, Xd and InDesign.
+           Beside that, I work on programming websites and applications.<br>
+           I can work with HTML & CSS , JavaScrip, PHP , Laravel , React-native and Java.<br>
+           I can edit video's and experiment with it when I want to have fun and work with animations. <br>
+           By doing this I learn and create new things to expand my knowledge.
+        </p>
+
+        <div class="downloadCv">
+            <a href="cv/CV_Mayes_NL.pdf" download>Download mijn CV</a>
+          </div>
+          <br>
+          <br>
+        
+        <!-- Skills -->
+
+        <h2 class="heading">Talen en framworks die ik ken</h2>
+        <div class="seperator"></div>
+        <div class="skill-container">
+            <div class="skill-card" style="--bg: #9C19E0">
+                <p class="skill"> HTML</p>
+            </div>
+           
+            <div class="skill-card" style="--bg: #FF5DA2">
+                <p class="skill"> CSS</p>
+            </div>
+           
+            <div class="skill-card" style="--bg: #9C19E0">
+                <p class="skill"> JavaScrip </p>
+            </div>
+           
+
+            <div class="skill-card" style="--bg: #FF5DA2">
+                <p class="skill"> Laravel</p>
+            </div>
+
+            <div class="skill-card" style="--bg: #9C19E0">
+                <p class="skill"> React-native</p>
+            </div>
+        
+            <div class="skill-card" style="--bg: #FF5DA2">
+                <p class="skill">Firebase</p>
+            </div>
+           
+            <div class="skill-card" style="--bg: #9C19E0">
+                <p class="skill"> Adobe</p>
+            </div>
+
+            <div class="skill-card" style="--bg: #FF5DA2">
+                <p class="skill"> Veel meer</p>
+            </div>
+           
+        </div>
+   </section>
+
+   <!-- Projects section -->
+   <section class="project" id="work-section">
+        <h2 class="heading"> Neem een kijkje op mijn werk </h2>
+        <div class="seperator"></div>
+    <!-- Filter -->
+        <div class="filters">
+            <button class="filter-btn active" id="all"> All</button>
+            <button class="filter-btn" id="webdevelopment"> Web development</button>
+            <button class="filter-btn" id="appdevelopment"> App development</button>
+            <button class="filter-btn" id="design"> Design</button>
+            <button class="filter-btn" id="motion"> Motion</button>
+        </div>
+    <!-- Projects -->
+    <div class="projects-container">
+        <!-- <div class="project-card">
+             <img src="./img/1W.png" alt="">
+             <div class="content">
+                 <h1 class="project-name"> project one</h1>
+                   <p class="project-info">text</p>
+                 <span class="tags">#javascript</span>
+             </div>
+        </div> -->
+    </div>
+   </section>
+<!-- Contact Section -->
+   <section class="contact" id="contact-section">
+    <h2 class="heading"> Let's have a chat  </h2>
+        <div class="seperator"></div>
+        <br>
+        <p class="sub-heading">
+            Interested in my work? or want to talk about somthing we have in common?
+            <br>Reach out for a conversation
+            <br>
+            <br>
+            Mayeselbaba@gmail.com
+        </p>
+   </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+    <img src="./img/footer1.png">
+    </footer>
+ 
+        <script src="js/project.js"></script>
+        <script src="js/index.js"></script>
+
+</div>
+</body>
+</html>
