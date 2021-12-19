@@ -255,6 +255,13 @@ body {
     color: white;
 }
 
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .project-container{
     width: 100%;
     display: grid;
@@ -262,25 +269,23 @@ body {
     grid-gap:20px;
 }
 
-.project-card{
-    position: relative;
-    cursor: pointer;
-    display: block;
+.project-card img{
+    width: 55%;
 }
 
-.project-card img{
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
+.project-card{
+    width: 41vh;
+    height: 35vh;
+    position: relative;
+    padding:0px 2em ;
 }
 
 .project-card .content{
     position:absolute;
     top: 0;
     left: 0;
-    width: 40%;
-    height: 100%;
-    /* background: rgba(0,0,0,0.7); */
+    width: 30vh;
+    height: 40vh;
     background-image: linear-gradient(90deg, #9C19E0, #FF5DA2);
     display: flex;
     justify-content: center;
@@ -289,9 +294,6 @@ body {
     text-transform: capitalize;
     opacity: 0;
 }
- .project-card img{
-    width: 40%;
- }
 
 .project-name{
     font-weight: 500;
@@ -309,6 +311,11 @@ body {
     padding: 1em;
 }
 
+.content{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
 .tags{
     position:absolute;
     bottom: 20px;
@@ -422,6 +429,14 @@ body {
 .filters{
     margin: 70px auto;
 }
+
+    /* Projects */
+    .projects-container{
+        align-items:center;
+        margin:0 auto;
+    }
+
+
 }
 
 /* Mobile view */
@@ -447,7 +462,10 @@ body {
         height: 330px;
 
     }
-
+    .project-card img{
+        width: 75%;
+        padding:0px 2.2em ;
+    }
     .project-name{
         font-size: 1em;
     }
@@ -458,6 +476,12 @@ body {
     .project-info{
         display: none;
     }
+
+    .project-card .content{
+        display: none;
+    }
+    
+    /* Filter */
     .filters{
         margin: 50px auto;
     }
@@ -466,37 +490,4 @@ body {
       margin: 5px auto;
 }
 
-}
-
-
-
-
-
-
-
-
-
-
-/* Responsive video */
-@media (min-aspect-ratio: 16/9) {
-    #videoBG {
-        width:100%;
-        height: auto;
-    }
-}
-@media (max-aspect-ratio: 16/9) {
-    #videoBG { 
-        width:auto;
-        height: 100%;
-    }
-}
-@media (max-width: 500px) {
-    #videoBG {
-        display: none;
-    }
-    body {
-        background: url('../src/images/header-mob.PNG');
-        background-size: cover;
-        background-repeat: no-repeat, repeat;
-    }
 }

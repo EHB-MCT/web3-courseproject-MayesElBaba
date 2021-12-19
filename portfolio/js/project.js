@@ -23,11 +23,10 @@ let projects =[
         tags: "#webdevelopment",
         image:"../img/3W.PNG",
     },
-
     {
 
-        name: "ChefsPost login",
-        info:"ChefsPost is a design for applications for challenges that can be played daily as well as weekly. The challenges are based on cooking skills. It will provide your skills but will keep your social contacts aswell since it is a challenge between you and your friend that you invite to challenge. This application is a good way to keep yourself up with friends, but you can also meet new people by challenging them aswell. This application is great because it makes the quarantaine a bit less worse and to make a better cook out of yourself.",
+        name: "login",
+        info:"ChefsPost is a design for applications for challenges that can be played daily as well as weekly. The challenges are based on cooking skills. It will provide your skills but will keep your social contacts aswell since it is a challenge between you and your friend that you invite to challenge.",
         tags: "#appdevelopment",
         image:"../img/1A.PNG",
     },
@@ -35,7 +34,7 @@ let projects =[
     {
 
         name: "Guess what it is?",
-        info:"Play and plant is a game that you can play. By playing the game you will dubble up your fruits and vegetables seeds. The intention of this game is to grow your seeds by playing, how more you play how more the seeds will grow and turn into a plant. You have to collect all the seeds to rank up in the game so you get more opportunities. The game helps to motivate the players to stay healthy and to eat their fruits and vegetables.",
+        info:"Play and plant is a game. By playing the game you will dubble up your fruits and vegetables seeds.The game helps to motivate the players to stay healthy and to eat their fruits and vegetables.",
         tags: "#appdevelopment",
         image:"../img/2A.PNG",
     },
@@ -43,7 +42,7 @@ let projects =[
     {
 
         name: "ChefsPost App",
-        info:"ChefsPost is a design for applications for challenges that can be played daily as well as weekly. The challenges are based on cooking skills. It will provide your skills but will keep your social contacts aswell since it is a challenge between you and your friend that you invite to challenge. This application is a good way to keep yourself up with friends, but you can also meet new people by challenging them aswell. This application is great because it makes the quarantaine a bit less worse and to make a better cook out of yourself.",
+        info:"ChefsPost is a design for applications for challenges that can be played daily as well as weekly. The challenges are based on cooking skills. It will provide your skills but will keep your social contacts aswell since it is a challenge between you and your friend that you invite to challenge.",
         tags: "#appdevelopment",
         image:"../img/3A.PNG",
     },
